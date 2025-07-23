@@ -1,0 +1,159 @@
+        .container {
+            place-self: center;
+            width: 150px;
+            height: 250px;
+            border: 2px solid rgb(155, 152, 152);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            column-gap: 10px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 100px;
+            transform: scale(1.6);
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 1.1px;
+            margin: 2px;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            border: 2px solid #fffbfb;
+            box-shadow: 1px 0px 4px 1px #565252;
+            font-weight: lighter;
+            color: orange;
+            background-color: white;
+        }
+
+        #outputbar {
+            color: orange;
+            width: 160px;
+            height: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.86);
+            border-radius: 10px;
+        }
+
+        input:hover {
+            /* box-shadow: 0px 0px 3px 1px orange; */
+            /* background-color:rgb(255, 245, 226);
+            color: black; */
+            transform: scale(1.1);
+        }
+
+        #outputbar:hover {
+            box-shadow: 1px 0px 4px 1px #565252;
+            color: orange;
+            width: 160px;
+            height: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.86);
+            border-radius: 10px;
+            transform: scale(1);
+            background-color: white;
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: orange;
+            color: rgb(255, 255, 255);
+            border-radius: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px rgb(24, 0, 0);
+
+        }
+
+        .parentbox{
+            margin: auto;
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            border: 1px solid orange;
+        }
+
+        @media (min-width: 1280px) and (max-width: 4812px) {
+          .navbar{
+             width:20vw;
+             border-radius: 5px;
+             margin: auto;
+             font-size: small;
+          }
+          .parentbox{
+            width: 20vw;
+            height: 30vw;
+            border-radius: 20px;
+          }
+         }
+
+
+          @media (max-width: 786px) {
+    .container {
+        transform: scale(1);
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    input {
+       width: 13vw;
+        height: 10vw;
+        font-size: 4vw;
+        padding: 2px;
+        margin: 3px;
+    }
+
+    #outputbar {
+        width: 95%;
+        height: 10vw;
+        font-size: 4.5vw;
+    }
+
+    .navbar {
+        width: 95%;
+        padding: 10px;
+        font-size: 4vw;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .parentbox {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 10px;
+        transform: scale(1);
+        gap: 10px;
+    }
+
+    input {
+        width: 20vw;
+        height: 12vw;
+        font-size: 5vw;
+        margin: 2px;
+    }
+
+    #outputbar {
+        font-size: 5vw;
+        width: 90%;
+        height: 12vw;
+    }
+
+    .navbar {
+        font-size: 6vw;
+        padding: 8px;
+    }
+
+    .parentbox {
+        padding: 10px;
+        width: 98%;
+    }
+}

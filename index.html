@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="parentbox">
+
+    <div class="navbar">
+        <div class="title navelement">
+            <h1>BASIC CALCULATOR </h1>
+        </div>
+    </div>
+   
+   
+   
+   <!-- actual content -->
+    <div class="container">
+        <div class="display">
+            <input id="outputbar" type="text">
+        </div>
+        <div class="row1">
+            <input type="button" value="AC" onclick="outputbar.value=''">
+            <input type="button" value="%" onclick="outputbar.value+='%'">
+            <input type="button" value="Del" onclick="outputbar.value = outputbar.value.toString().slice(0,-1)">
+            <input type="button" value="/" onclick="outputbar.value+='/'">
+        </div>
+
+        <div class="row2">
+            <input type="button" value="7" onclick="outputbar.value+='7'">
+            <input type="button" value="8" onclick="outputbar.value+='8'">
+            <input type="button" value="9" onclick="outputbar.value+='9'">
+            <input type="button" value="X" onclick="outputbar.value+='*'">
+        </div>
+
+        <div class="row3">
+            <input type="button" value="4" onclick="outputbar.value+='4'">
+            <input type="button" value="5" onclick="outputbar.value+='5'">
+            <input type="button" value="6" onclick="outputbar.value+='6'">
+            <input type="button" value="-" onclick="outputbar.value+='-'">
+        </div>
+
+        <div class="row4">
+            <input type="button" value="1" onclick="outputbar.value+='1'">
+            <input type="button" value="2" onclick="outputbar.value+='2'">
+            <input type="button" value="3" onclick="outputbar.value+='3'">
+            <input type="button" value="+" onclick="outputbar.value+='+'">
+        </div>
+
+        <div class="row5">
+            <input type="button" value="00" onclick="outputbar.value+='00'">
+            <input type="button" value="0" onclick="outputbar.value+='0'">
+            <input type="button" value="." onclick="outputbar.value+='.'">
+            <input type="button" value="=" onclick="outputbar.value = eval(outputbar.value)">
+
+        </div>
+
+    </div>
+    <script>
+        alert("Developed by pardhu")
+    </script>
+</div>
+</body>
+
+</html>
