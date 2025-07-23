@@ -34,6 +34,7 @@
             height: 25px;
             border: 2px solid rgba(255, 255, 255, 0.86);
             border-radius: 10px;
+            font-weight: bolder;
         }
 
         input:hover {
@@ -43,7 +44,7 @@
             transform: scale(1.1);
         }
 
-        #outputbar:hover {
+        /* #outputbar:hover {
             box-shadow: 1px 0px 4px 1px #565252;
             color: orange;
             width: 160px;
@@ -52,7 +53,7 @@
             border-radius: 10px;
             transform: scale(1);
             background-color: white;
-        }
+        } */
 
         .navbar{
             display: flex;
@@ -128,12 +129,16 @@
 }
 
 @media (max-width: 500px) {
+    body{
+       height: 80vw;
+    }
         .container {
         transform: scale(1);
-        width: 101%;
+        width: 120vw;
         height: auto;
         padding: 15px;
         margin-top: 14px;
+
     }
 
 
@@ -141,14 +146,16 @@
         width: 16vw;
         height: 17vw;
         font-size: 8vw;
+        font-weight: bold;
         margin: 7px;
     }
 
-      #outputbar {
+         #outputbar {
         font-size: 5vw;
-        width: 143%;
+        color: black;
+        width: 119%;
         height: 12vw;
-        margin-left: -65px;
+        margin-left: -43px;
         padding: 11px;
     }
 
@@ -157,6 +164,7 @@
         font-size: 4vw;
         padding: 8px;
         MARGIN: -23PX;
+        width: 113vw;
     }
     .parentbox {
         background-color: white;
